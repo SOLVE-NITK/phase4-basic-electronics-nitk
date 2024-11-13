@@ -1,0 +1,19 @@
+<div id="refresh">
+    <p class="heading">Sort the below images in the respective boxes</p>
+    <p class="heading " id="complete"></p>
+    <div class="img_container">
+    <img id="image1" class="relay_images"src="./images/N-Channel MOSFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="placeholder1">
+    <img id="image3" class="relay_images"src="./images/npn1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="placeholder2">
+    <img id="image5" class="relay_images"src="./images/pnp1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="placeholder2"> <!--bjt-->
+    <img id="image4" class="relay_images"src="./images/P–Channel MOSFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="placeholder1"> 
+    </div>
+    <div class="placeholder" id="placeholder1" ondrop="drop(event);" ondragover="allowDrop(event);">
+        <p><b><u>Switching purpose</u></b></p>
+    </div>
+    <div class="placeholder" id="placeholder2" ondrop="drop(event);" ondragover="allowDrop(event);">
+        <p><b><u>Amplification Purpose</u></b></p>
+    </div>
+    <button class="prev-button" onclick="prev_pg5()">Previous</button>
+    <button class="next" onclick="trans3_to_home();">Home</button>
+
+</div>

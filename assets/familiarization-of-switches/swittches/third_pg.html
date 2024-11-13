@@ -1,0 +1,70 @@
+<!-- 2nd difference of resistors -->
+<!-- spst- there is only one circuit that can be controlled , and the switch only opens and closes a single contact
+spdt- Only one of the loads can be energized at a time.
+dpst - Both load terminals can be energized at the same time. They are independent of each other and could be of different voltages.
+dpdt - Functions like two separate SPDT switches operated by the same actuator. Only two loads can be On at a time. -->
+<div id="refresh" >
+    <p class="heading">Sort the below images in the respective boxes</p>
+    <p class="heading " id="complete"></p>
+    <div class="img_container">
+    <img id="image2" class="relay_images"src="./images/dpdt.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="second">
+    <img id="image3" class="relay_images"src="./images/doublepl.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="third">
+    <img id="image1" class="relay_images"src="./images/spst.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="first">
+    <img id="image4" class="relay_images"src="./images/double_single.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="fourth"> 
+    </div>
+    <div class="match">
+        
+        <div class="placeholder1" id="first" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="first">
+            <p  class="content1"><b><u>Single pole single throw</b></u></p>
+            <p class="foot"><i>Control a single electrical circuit</i></p> 
+        </div>
+       
+        <div class="placeholder1" id="second" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="second">
+            <p class="content1"><b><u>Single pole Double throw</b></u></p>
+            <p class="foot"><i>Accurate switching between two different electrical circuits.</i></p>
+        </div>
+    
+        
+        <div class="placeholder2" id="third" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="third">
+            <p class="content1"><b><u>Double pole double throw</b></u></p>
+            <P class="foot"><i>Suitable for applications that require the simultaneous activation or deactivation of two circuits.</i></P>
+        </div>
+       
+        <div class="placeholder2" id="fourth" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="fourth">
+            <p class="content1"><b><u>Double pole Single throw</b></u></p>
+            <p class="foot"><i>Suitable for applications that require dual-circuit control or reversing the direction of a device.</i></p>
+            <!-- <button class="next"id="nextpage" onclick="refresh()">Next</button> -->
+        </div>
+        
+    </div><br>
+    <button class="prev-button" onclick="relay2_to_home();">HOME</button>
+    <!-- <button class="next" onclick="next_pg4()">Next</button> -->
+</div>
+
+<!-- <script>
+    function allowDrop(event) {
+        event.preventDefault();
+    }
+
+
+
+    function drag(event) {
+        event.dataTransfer.setData("imageId", event.target.id);
+        console.log(event.target.)
+    }
+
+    function drop(event) {
+        event.preventDefault();
+        var imageId = event.dataTransfer.getData("imageId");
+        var placeholderId = event.target.id;
+        console.log(imageId);
+        console.log(placeholderId);
+        var expectedPlaceholder = document.getElementById(imageId).getAttribute("data-placeholder");
+        console.log(expectedPlaceholder);
+        if (placeholderId === expectedPlaceholder) {
+            event.target.appendChild(document.getElementById(imageId));
+        } else {
+            alert("Oops!.Try Again");
+        }
+    }
+</script> -->

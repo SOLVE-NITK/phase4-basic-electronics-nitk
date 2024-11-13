@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <img id="Spst" width="150" height="150" src="spst1.png"> -->
+<canvas id="myCanvas" width="150" height="150" style="border:1px solid grey;"></canvas>
+
+<script>
+// // Create a canvas:
+// const canvas = document.getElementById("myCanvas");
+// const ctx = canvas.getContext("2d");
+// // //Draw a line
+// // Define a new path:
+// ctx.beginPath();
+
+// // Define a start point
+// ctx.moveTo(0,0);
+
+// // Define an end point
+// ctx.lineTo(50,100);
+// //width
+// ctx.lineWidth=5;
+// ctx.strokeStyle="grey";
+// ctx.lineCap="round";//edges
+// // Draw it
+
+// ctx.stroke();
+// //circle
+//     // ctx.beginPath();
+//     // ctx.arc(55,50,50,0,2*Math.PI);
+//     // ctx.stroke();
+// image insertion 
+// window.onload=function(){
+// const canvas=document.getElementById("myCanvas");
+// const ctx=canvas.getContext("2d");
+// let img_src="spst1.png";
+// const img=document.getElementById("Spst");
+// ctx.drawImage(img_src,0,0,150,150);
+// };
+window.onload=function(){
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+
+    // Create our image
+    // let newImage = new Image();
+    // newImage.src = "spst1.png";
+    let imgsrc1="spst1.png";
+    let imgsrc2="spst2.png";
+    let imgsrc3="spst3.png";
+    let imgsrc4="dpdt1.png";
+    let imgsrc5="dpdt2.png";
+    let imgsrc6="dpdt3.png";
+
+
+
+
+
+    // When it loads
+    // newImage.onload = () => {
+        // Draw the image onto the context
+        ctx.drawImage(imgsrc1, 0, 0, 150, 150);
+    
+};
+</script>
+
+</body>
+</html>

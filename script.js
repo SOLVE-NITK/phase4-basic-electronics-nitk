@@ -16,28 +16,28 @@ const URLS = [
     url: "assets/opam-combo/index.html",
   },
   {
-    name: "Familiarization of transistors",
-    url: "assets/exp-thermal-conductivity/simulation/index.html",
-  },
-  {
-    name: "Familiarization of Meters",
-    url: "assets/slab/index.html",
+    name: "Number System Conversion",
+    url: "assets/number-system/index.html",
   },
   {
     name: "Verification of Kirchoff’s Voltage law",
-    url: "assets/heat/index.html",
+    url: "assets/verification-of-kirchoffs-voltage-law/index.html",
   },
   {
-    name: "Study of Voltage divider and Current divider Rule",
-    url: "assets/exp-coupled-pendulum/simulation/angular.html",
+    name: "Study of Voltage divider Rule",
+    url: "assets/divider-combo/voltage-divider-rule/index.html",
+  },
+  {
+    name: "Study of Current divider Rule",
+    url: "assets/divider-combo/current-divider-rule/index.html",
   },
   {
     name: "Input-Output Characteristics of FET",
-    url: "assets/cart/index.html",
+    url: "assets/jfet/index.html",
   },
   {
-    name: "Familiarization of switching devices",
-    url: "assets/utslayer1/index.html",
+    name: "Verification of DeMorgan's Theorem",
+    url: "assets/demorgan/index.html",
   },
 ];
 

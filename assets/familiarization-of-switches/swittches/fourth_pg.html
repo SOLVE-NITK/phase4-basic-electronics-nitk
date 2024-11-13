@@ -1,0 +1,39 @@
+<!--  first diff b/w transistors -->
+<div id="refresh" >
+    <p class="heading">Sort the below images in the respective boxes</p>
+    <p class="heading " id="complete"></p>
+    <div class="img_container">
+    <img id="image1" class="relay_images"src="./images/N-Channel MOSFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="fourth">
+    <img id="image2" class="relay_images"src="./images/N–Channel JFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="second">
+    <img id="image3" class="relay_images"src="./images/npn1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="first">
+    <img id="image4" class="relay_images"src="./images/P–Channel JFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="second"> 
+    <img id="image5" class="relay_images"src="./images/pnp1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="first"> <!--bjt-->
+    <img id="image6" class="relay_images"src="./images/P–Channel MOSFET1.png" alt="Relay" height="100" width="100"draggable="true" ondragstart="drag(event)" data-placeholder="fourth"> 
+    </div>
+    <div class="placeholder" id="first" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="first">
+        <p class="h1"><b><u>Bipolar junction transistor</u></b></p>
+        <p class="foot1"><i>NPN transistor is a semiconductor device that amplifies or switches electronic signals.PNP transistors are used to amplify or switch electronic signals</i> </p>
+    </div>
+    
+
+    <!-- <div class="placeholder1" id="second" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="second">
+        <p class="content">Double pole single throw</p>
+    </div><br><br> -->
+    <div class="placeholder4" >
+        <p class="heading2"><u><b>Field Effect Transistors</u></b></p>
+        <div class="placeholder3" id="second" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="second">
+            <p class="heading3"> <b>JFET</b></p><br><br>
+            <p class="foot1"><i>A field-effect transistor and it is the three terminal device.Can be used as switch, amplifier, etc </i></p>
+        </div>
+        
+        <div class="placeholder3" id="fourth" ondrop="drop(event);" ondragover="allowDrop(event);" data-placeholder="fourth">
+            <p class="h2"> <b>MOSFET</b></p>
+            <!-- <button class="next"id="nextpage" onclick="refresh()">Next</button> -->
+            <p class="foot1"><i>A field-effect transistor and it is a four terminal device with source(S), gate (G), drain (D) and body (B) terminals.</i> </p>
+        </div>
+        
+        <br>
+    </div><br>
+    <button class="prev-button" onclick="prev_pg4()">Previous</button>
+    <button class="next" onclick=" next_pg5()">Next</button>
+</div>

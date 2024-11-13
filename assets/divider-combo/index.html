@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SOLVE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js" > </script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"> </script>
+    <script defer src="js/scriptAdd.js"></script> 
+
+    <style>
+      @media (max-width: 600px) {
+        /* Adjust canvas size for smaller screens */
+        canvas {
+          width: 100%;
+          height: auto;
+        }
+      }
+     </style>
+
+
+  </head>
+
+  <body onload="startsim();varinit();"> 
+
+    <div class="title-div-container landing-page">
+      <div class="title-div">
+
+        <div class="logo-div">
+          <a href="#"><img src="images/nitk.svg" alt="Logo" class="logo" /></a>
+        </div>
+
+        <h1>Study of Voltage divider and Current divider Rule
+        </h1>
+      </div>
+    <!-- <div class="container"> -->
+      <div class="main">
+        <div class="main-section select-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Choose any one divider rule</h3>
+            <div class="canvas__div" style="height: 200px;">
+              <div class="logic-gate" style="padding-top: 50px; padding-left: 90px;">
+                <a href="./voltage-divider-rule/index.html">Study of Voltage Divider Rule</a>
+              </div>
+              <div class="logic-gate" style="padding-top: 50px; padding-left: 90px;">
+                <a href="./current-divider-rule/index.html">Study of Current Divider Rule</a>
+              </div>
+            </div>
+          </div>
+          <div class="main__task-div footer main-footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

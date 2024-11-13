@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Solve NITK KCL</title>
+    <title>SOLVE</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/query.css" />
 
-    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script defer src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js" > </script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"
+    ></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"> </script>
-    <script defer src="js/script.js"></script> 
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
@@ -32,15 +49,12 @@
           height: auto;
         }
       }
-     </style>
-
+    </style>
   </head>
 
-  <body onload="startsim();varinit();"> 
-
+  <body onload="startsim();varinit();">
     <div class="title-div-container">
       <div class="title-div">
-
         <div class="logo-div">
           <a href="#"><img src="images/nitk.svg" alt="Logo" class="logo" /></a>
         </div>
@@ -54,26 +68,60 @@
         <ul class="tool-menu">
           <li class="tool-list">
             <a href="#simulation" class="tool-link" title="Simulation">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
+                />
               </svg>
               <span>Simulation</span>
             </a>
           </li>
           <li class="tool-list">
             <a href="#variables" class="tool-link" title="Variables">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
+                />
               </svg>
               <span>Variables</span>
             </a>
           </li>
           <li class="tool-list">
             <a href="#comments" class="tool-link" title="Comments">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
-              <span>Results</span></a>
+              <span>Results</span></a
+            >
           </li>
         </ul>
       </div>
@@ -82,151 +130,225 @@
           <div id="simulation" class="main__task-div">
             <div class="title-control-div">
               <h3 class="task-title">Simulation</h3>
-              <div id="controls" class="div__control">
-              </div>
+              <div id="controls" class="div__control"></div>
             </div>
             <div class="canvas__div">
               <!-- <div id="canvas-container"> -->
-                <canvas id="canvas" width="820" height="500" style=" display: block; border: 1px solid #fff; border-radius: 7px;"></canvas>
-              </div>
+              <canvas
+                id="canvas"
+                width="820"
+                height="500"
+                style="
+                  display: block;
+                  border: 1px solid #fff;
+                  border-radius: 7px;
+                "
+              ></canvas>
+            </div>
           </div>
           <div id="variables" class="main__task-div">
             <div class="settings-sections">
               <h3 class="task-title">Variables</h3>
-                <div class="variables-sections">
-                  <div class="var-div">
-                    <label for="distance1Spinner">Distance 1 (D1)</label>
-                    <input class="var-spinner" id="distance1Spinner" name="value" />
-                    <div class="var-slider" id="distance1Slider"></div>
-                  </div>
-                  <div class="var-div">
-                    <label for="distance2Spinner">Distance 2 (D2)</label>
-                    <input class="var-spinner" id="distance2Spinner" name="value" />
-                    <div class="var-slider" id="distance2Slider"></div>
-                  </div>
-                  <div class="var-div">
-                    <label for="distance3Spinner">Distance 3 (D3)</label>
-                    <input class="var-spinner" id="distance3Spinner" name="value" />
-                    <div class="var-slider" id="distance3Slider"></div>
-                  </div>
-                  <div class="var-div">
-                    <label for="distance4Spinner">Distance 4 (D4)</label>
-                    <input class="var-spinner" id="distance4Spinner" name="value" />
-                    <div class="var-slider" id="distance4Slider"></div>
-                  </div>
+              <div class="variables-sections">
+                <div class="var-div">
+                  <label for="distance1Spinner">Distance 1 (D1)</label>
+                  <input
+                    class="var-spinner"
+                    id="distance1Spinner"
+                    name="value"
+                  />
+                  <div class="var-slider" id="distance1Slider"></div>
+                </div>
+                <div class="var-div">
+                  <label for="distance2Spinner">Distance 2 (D2)</label>
+                  <input
+                    class="var-spinner"
+                    id="distance2Spinner"
+                    name="value"
+                  />
+                  <div class="var-slider" id="distance2Slider"></div>
+                </div>
+                <div class="var-div">
+                  <label for="distance3Spinner">Distance 3 (D3)</label>
+                  <input
+                    class="var-spinner"
+                    id="distance3Spinner"
+                    name="value"
+                  />
+                  <div class="var-slider" id="distance3Slider"></div>
+                </div>
+                <div class="var-div">
+                  <label for="distance4Spinner">Distance 4 (D4)</label>
+                  <input
+                    class="var-spinner"
+                    id="distance4Spinner"
+                    name="value"
+                  />
+                  <div class="var-slider" id="distance4Slider"></div>
+                </div>
               </div>
             </div>
           </div>
-		    <div id="comments" class="main__task-div">
+          <div id="comments" class="main__task-div">
             <h3 class="task-title">Controls</h3>
-              <div class="settings-sections">
-                <div class="control-sections">
-                  <button id="simulate-btn" class="button" style="cursor: pointer;" onclick="startSimulation();">Start Simulation</button> 
-                  <button id="take-readings" class="button" style="cursor: pointer;" onclick="takeReadings();">Take Readings</button>
-                  <button id="plot-graph-btn" class="button" style="cursor: pointer;" onclick="plotGraph()">Plot Graph</button>
-                  <button id="result-btn" class="button" style="cursor: pointer;" onclick="showResult()">Result</button>
-                  <p id="message" style="text-align: center; margin-top: 20px;"></p>
-                </div>
+            <div class="settings-sections">
+              <div class="control-sections">
+                <button
+                  id="simulate-btn"
+                  class="button"
+                  style="cursor: pointer"
+                  onclick="startSimulation();"
+                >
+                  Start Simulation
+                </button>
+                <button
+                  id="take-readings"
+                  class="button"
+                  style="cursor: pointer"
+                  onclick="takeReadings();"
+                >
+                  Take Readings
+                </button>
+                <button
+                  id="plot-graph-btn"
+                  class="button"
+                  style="cursor: pointer"
+                  onclick="plotGraph()"
+                >
+                  Plot Graph
+                </button>
+                <button
+                  id="result-btn"
+                  class="button"
+                  style="cursor: pointer"
+                  onclick="showResult()"
+                >
+                  Result
+                </button>
+                <p
+                  id="message"
+                  style="text-align: center; margin-top: 20px"
+                ></p>
               </div>
+            </div>
           </div>
           <div id="comments" class="main__task-div">
-            <h3 class="task-title" style="text-align: center;">Tabulation</h3>
-              <div class="settings-sections">
-                <div class="control-sections">
-                    <table id="mytable">
-                      <tr>
-                        <th>Voltage</th>
-                        <th>Current (I <sub>D1</sub>)</th>
-                        <th>Current (I <sub>D2</sub>)</th>
-                        <th>Current (I <sub>D3</sub>)</th>
-                        <th>Current (I <sub>D4</sub>)</th>
-                      </tr>
-                      <tr id="v0">
-                        <td>0</td>
-                        <td id="r2c2"></td>
-                        <td id="r2c3"></td>
-                        <td id="r2c4"></td>
-                        <td id="r2c5"></td>
-                      </tr>
-                      <tr id="v5">
-                        <td>5</td>
-                        <td id="r3c2"></td>
-                        <td id="r3c3"></td>
-                        <td id="r3c4"></td>
-                        <td id="r3c5"></td>
-                      </tr>
-                      <tr id="v10">
-                        <td>10</td>
-                        <td id="r4c2"></td>
-                        <td id="r4c3"></td>
-                        <td id="r4c4"></td>
-                        <td id="r4c5"></td>
-                      </tr>
-                      <tr id="v15">
-                        <td>15</td>
-                        <td id="r5c2"></td>
-                        <td id="r5c3"></td>
-                        <td id="r5c4"></td>
-                        <td id="r5c5"></td>
-                      </tr>
-                      <tr id="v20">
-                        <td>20</td>
-                        <td id="r6c2"></td>
-                        <td id="r6c3"></td>
-                        <td id="r6c4"></td>
-                        <td id="r6c5"></td>
-                      </tr>
-                      <tr id="v25">
-                        <td>25</td>
-                        <td id="r7c2"></td>
-                        <td id="r7c3"></td>
-                        <td id="r7c4"></td>
-                        <td id="r7c5"></td>
-                      </tr>
-                      <tr id="v30">
-                        <td>30</td>
-                        <td id="r8c2"></td>
-                        <td id="r8c3"></td>
-                        <td id="r8c4"></td>
-                        <td id="r8c5"></td>
-                      </tr>
-                    </table>
-                </div>
+            <h3 class="task-title" style="text-align: center">Tabulation</h3>
+            <div class="settings-sections">
+              <div class="control-sections">
+                <table id="mytable">
+                  <tr>
+                    <th>Voltage</th>
+                    <th>Current (I <sub>D1</sub>)</th>
+                    <th>Current (I <sub>D2</sub>)</th>
+                    <th>Current (I <sub>D3</sub>)</th>
+                    <th>Current (I <sub>D4</sub>)</th>
+                  </tr>
+                  <tr id="v0">
+                    <td>0</td>
+                    <td id="r2c2"></td>
+                    <td id="r2c3"></td>
+                    <td id="r2c4"></td>
+                    <td id="r2c5"></td>
+                  </tr>
+                  <tr id="v5">
+                    <td>5</td>
+                    <td id="r3c2"></td>
+                    <td id="r3c3"></td>
+                    <td id="r3c4"></td>
+                    <td id="r3c5"></td>
+                  </tr>
+                  <tr id="v10">
+                    <td>10</td>
+                    <td id="r4c2"></td>
+                    <td id="r4c3"></td>
+                    <td id="r4c4"></td>
+                    <td id="r4c5"></td>
+                  </tr>
+                  <tr id="v15">
+                    <td>15</td>
+                    <td id="r5c2"></td>
+                    <td id="r5c3"></td>
+                    <td id="r5c4"></td>
+                    <td id="r5c5"></td>
+                  </tr>
+                  <tr id="v20">
+                    <td>20</td>
+                    <td id="r6c2"></td>
+                    <td id="r6c3"></td>
+                    <td id="r6c4"></td>
+                    <td id="r6c5"></td>
+                  </tr>
+                  <tr id="v25">
+                    <td>25</td>
+                    <td id="r7c2"></td>
+                    <td id="r7c3"></td>
+                    <td id="r7c4"></td>
+                    <td id="r7c5"></td>
+                  </tr>
+                  <tr id="v30">
+                    <td>30</td>
+                    <td id="r8c2"></td>
+                    <td id="r8c3"></td>
+                    <td id="r8c4"></td>
+                    <td id="r8c5"></td>
+                  </tr>
+                </table>
               </div>
+            </div>
           </div>
           <div id="result-display-div" class="main__task-div">
             <h3 class="task-title">Graph</h3>
-              <div class="settings-sections">
-                <div class="control-sections">
-                  <div class="canvas__div">
-                    <canvas id="canvas1" width="820" height="500" style=" display: block; border: 1px solid #fff; border-radius: 7px;"></canvas>
-                  </div>
-                  <p>Click on result button to view the result</p>
+            <div class="settings-sections">
+              <div class="control-sections">
+                <div class="canvas__div">
+                  <canvas
+                    id="canvas1"
+                    width="820"
+                    height="500"
+                    style="
+                      display: block;
+                      border: 1px solid #fff;
+                      border-radius: 7px;
+                    "
+                  ></canvas>
                 </div>
+                <p>Click on result button to view the result</p>
               </div>
-          </div>  
+            </div>
+          </div>
           <div id="comments" class="main__task-div">
             <h3 class="task-title">Calcualtions</h3>
-              <div class="settings-sections">
-                <div class="control-sections"> 
-                  <p>Total Current (I <sub>T</sub>) = I <sub>Dark</sub> + I <sub>Photo</sub> <br> I <sub>Dark</sub> = I <sub>saturation</sub> * exp <sup>(e*V/(K*T)-1)</sup> <br> I <sub>Photo</sub> = Responsivity * L / D<sup>2</sup> <br> e = 1.602 * 10 <sup>-19</sup> <br> K = 1.380 * 10 <sup>-23</sup> <br>T = 303.15 K </p>
-                </div>
+            <div class="settings-sections">
+              <div class="control-sections">
+                <p>
+                  Total Current (I <sub>T</sub>) = I <sub>Dark</sub> + I
+                  <sub>Photo</sub> <br />
+                  I <sub>Dark</sub> = I <sub>saturation</sub> * exp
+                  <sup>(e*V/(K*T)-1)</sup> <br />
+                  I <sub>Photo</sub> = Responsivity * L / D<sup>2</sup> <br />
+                  e = 1.602 * 10 <sup>-19</sup> <br />
+                  K = 1.380 * 10 <sup>-23</sup> <br />T = 303.15 K
+                </p>
               </div>
+            </div>
           </div>
           <div id="comments" class="main__task-div">
             <h3 class="task-title">Result</h3>
-              <div class="settings-sections">
-                <div class="control-sections">
-                  <p id="p3">I-V characteristics of Photo Diode is observed<br>relation between Intensity and Photo current is observed</p>
-                </div>
+            <div class="settings-sections">
+              <div class="control-sections">
+                <p id="p3">
+                  I-V characteristics of Photo Diode is observed<br />relation
+                  between Intensity and Photo current is observed
+                </p>
               </div>
-          </div>          
+            </div>
+          </div>
           <div class="main__task-div footer">
             <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
           </div>
         </div>
       </div>
     </div>
-    
   </body>
 </html>
